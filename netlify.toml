@@ -1,8 +1,7 @@
 [build]
-  # Directory to publish after running the build command
-  publish = "build"
-  # Build command to run, typically for React projects
   command = "npm run build"
+  publish = "build"
+
 
 # Optional settings
 [build.environment]
