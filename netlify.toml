@@ -1,0 +1,14 @@
+[build]
+  # Directory to publish after running the build command
+  publish = "build"
+  # Build command to run, typically for React projects
+  command = "npm run build"
+
+# Optional settings
+[build.environment]
+  NODE_VERSION = "18.0.0"  # Specify Node.js version if needed
+  CI = "true"              # Disable interactive prompts in CI environments
+
+# Optional: Netlify plugins, if you use any
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"  # Example plugin to run Lighthouse audits
